@@ -28,6 +28,7 @@ from clam.common.digestauth import pwhash
 import clam
 import sys
 import os
+from clam.common.data import CLAMMetaData  #import CLAMMetaData
 
 REQUIRE_VERSION = 2.3
 
@@ -150,6 +151,17 @@ STYLE = 'classic'
 #    mimetype = 'text/xml'
 
 # CUSTOM_FORMATS = [ MyXMLFormat ]
+
+
+class NafXMLFormat(CLAMMetaData):
+    attributes = {}
+    name = "NLP XML"
+    mimetype = 'text/xml'
+    scheme = ''
+
+
+CUSTOM_FORMATS = [ NafXMLFormat ]
+
 
 # ======= INTERFACE OPTIONS ===========
 

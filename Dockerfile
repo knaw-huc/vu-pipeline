@@ -11,6 +11,6 @@ ADD ./conf/config.yml /vurm/config.yml
 
 ADD ./conf/vupipeline.py /vurm/vupipeline/vupipeline/vupipeline.py
 ADD ./conf/vupipeline_wrapper.py /vurm/vupipeline/vupipeline/vupipeline_wrapper.py
-ADD ./conf/formats.py /vurm/clamenv/lib/python3.6/site-packages/clam/common/formats.py
+#ADD ./conf/formats.py /vurm/clamenv/lib/python3.6/site-packages/clam/common/formats.py
 
 RUN . clamenv/bin/activate && cd vupipeline && python setup.py install

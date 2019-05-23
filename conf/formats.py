@@ -111,12 +111,6 @@ class FoLiAXMLFormat(CLAMMetaData):
     mimetype = 'text/xml'
     scheme = '' #TODO
 
-class NafXMLFormat(CLAMMetaData):
-    attributes = {}
-    name = "NLP XML"
-    mimetype = 'text/xml'
-    scheme = '' #TODO
-
 class AlpinoXMLFormat(CLAMMetaData):
     attributes = {}
     name = "Alpino XML"
